@@ -23,6 +23,9 @@ My solution searches for the first letter of the target word and then creates an
 
 The final release was to create a user-interface within the command-line. My UI displays the puzzle in the terminal and asks the user for a word to be found and responds depending on that word. If the word is found, it will appear highlighted within the puzzle. If the word cannot be found, it will simply say that it cannot find the given word.
 
+![word-search-UI-screenshot](https://github.com/dandersen2/word-search/word-search-UI.png "Word Search Screenshot")
+Here you can see the snaking solution has found the word "nighthawks" and displayed it for the user.
+
 ###Try My Solution:
 
 To try my word-search solution, download or clone this repo to your computer and run the runner file by typing "ruby runner.rb" in the terminal within the word-search folder. follow the instructions and enter a word to be searched for. Try to find "foxes" or "nighthawks" to test it out. For now the program must be run again each time you wish to make a guess. If I return to this project I will implement a loop(while/until) that will continue allowing guesses until a word has been found or that will allow a user to play until the type 'exit' to quit out of the loop.
