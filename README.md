@@ -15,7 +15,7 @@ puzzle = [
 ```
 *Figure 1*. Representing a word search puzzle as a nested array
 
-This was a solo project with several different releases. A puzzle is given in the form of a nested array with "rows" of single letters. The first release requires finding a given word in a straight line within the puzzle either vertically, horizontally, or diagonally. The word and the puzzle are entered as arguments to the straight_line_include? method in word_search.rb, which calls upon the "vertical?", "horizontal?", and "diag_include?" methods. The horizontal method proved extremely simple, while the vertical method required an extra step. The diagonal word finder method was significantly more involved as it required altering the puzzle quite a bit in order to use the ruby enumerables and built-in array class methods that I want to use.
+This was a single-day solo project at [Dev Bootcamp](http://devbootcamp.com/) with several different releases. A puzzle is given in the form of a nested array with "rows" of single letters. The first release requires finding a given word in a straight line within the puzzle either vertically, horizontally, or diagonally. The word and the puzzle are entered as arguments to the straight_line_include? method in word_search.rb, which calls upon the "vertical?", "horizontal?", and "diag_include?" methods. The horizontal method proved extremely simple, while the vertical method required an extra step. The diagonal word finder method was significantly more involved as it required altering the puzzle quite a bit in order to use the ruby enumerables and built-in array class methods that I want to use.
 
 The next release required finding a word that could be "snaking" throughout the puzzle, meaning that all of the letters in the word only need to appear in the puzzle and be touching in the correct order but that they can be touching horizontally, vertically or diagonally. These are the same rules that the game "Boggle" uses. Each letter in the puzzle can be used only once in any given word. The target word we wanted our algorithm to be able to find was "nighthawks", which starts on the bottom row, in the 4th position of the puzzle we were given.
 
@@ -23,7 +23,7 @@ My solution searches for the first letter of the target word and then creates an
 
 The final release was to create a user-interface within the command-line. My UI displays the puzzle in the terminal and asks the user for a word to be found and responds depending on that word. If the word is found, it will appear highlighted within the puzzle. If the word cannot be found, it will simply say that it cannot find the given word.
 
-![word-search-UI-screenshot](https://github.com/dandersen2/word-search/word-search-UI.png "Word Search Screenshot")
+![word-search-UI-screenshot](https://github.com/dandersen2/word-search/blob/master/word-search-UI.png "Word Search Screenshot")
 Here you can see the snaking solution has found the word "nighthawks" and displayed it for the user.
 
 ###Try My Solution:
